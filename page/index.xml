@@ -1,46 +1,44 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
     <channel>
-        <title>Pages on 张三的博客</title>
+        <title>Pages on 90后小陈老师</title>
         <link>https://freshman118.github.io/page/</link>
-        <description>Recent content in Pages on 张三的博客</description>
+        <description>Recent content in Pages on 90后小陈老师</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-cn</language>
-        <copyright>张三</copyright><atom:link href="https://freshman118.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>关于</title>
-        <link>https://freshman118.github.io/%E5%85%B3%E4%BA%8E/</link>
+        <copyright>90后小陈老师</copyright>
+        <lastBuildDate>Tue, 28 May 2019 00:00:00 +0000</lastBuildDate><atom:link href="https://freshman118.github.io/page/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>归档</title>
+        <link>https://freshman118.github.io/archives/</link>
+        <pubDate>Tue, 28 May 2019 00:00:00 +0000</pubDate>
+        
+        <guid>https://freshman118.github.io/archives/</guid>
+        <description></description>
+        </item>
+        <item>
+        <title>关于我</title>
+        <link>https://freshman118.github.io/%E5%85%B3%E4%BA%8E%E6%88%91/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://freshman118.github.io/%E5%85%B3%E4%BA%8E/</guid>
-        <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
+        <guid>https://freshman118.github.io/%E5%85%B3%E4%BA%8E%E6%88%91/</guid>
+        <description>&lt;p&gt;一名高校计算机专任教师，曾在企业就职开发相关工作，后在高校教学计算机基础、编程语言、网络知识、游戏开发、虚拟现实技术、AI等知识。团队游戏“北欧女武神”已上线，安卓手机在TapTap上搜索“北欧女武神”，苹果手机在App Store搜索“战神之歌”。&lt;/p&gt;
 </description>
         </item>
         <item>
-        <title>归档</title>
-        <link>https://freshman118.github.io/%E5%BD%92%E6%A1%A3/</link>
+        <title>链接</title>
+        <link>https://freshman118.github.io/%E9%93%BE%E6%8E%A5/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://freshman118.github.io/%E5%BD%92%E6%A1%A3/</guid>
-        <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
-</description>
+        <guid>https://freshman118.github.io/%E9%93%BE%E6%8E%A5/</guid>
+        <description></description>
         </item>
         <item>
         <title>搜索</title>
-        <link>https://freshman118.github.io/%E6%90%9C%E7%B4%A2/</link>
+        <link>https://freshman118.github.io/search/</link>
         <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
         
-        <guid>https://freshman118.github.io/%E6%90%9C%E7%B4%A2/</guid>
-        <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
-</description>
-        </item>
-        <item>
-        <title>友情链接</title>
-        <link>https://freshman118.github.io/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/</link>
-        <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-        
-        <guid>https://freshman118.github.io/%E5%8F%8B%E6%83%85%E9%93%BE%E6%8E%A5/</guid>
-        <description>&lt;p&gt;This is a test page for i18n support.&lt;/p&gt;
-</description>
+        <guid>https://freshman118.github.io/search/</guid>
+        <description></description>
         </item>
         
     </channel>

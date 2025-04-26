@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <title>AI on 90后小陈老师</title>
+        <link>https://freshman118.github.io/categories/ai/</link>
+        <description>Recent content in AI on 90后小陈老师</description>
+        <generator>Hugo -- gohugo.io</generator>
+        <language>zh-cn</language>
+        <copyright>90后小陈老师</copyright>
+        <lastBuildDate>Sat, 26 Apr 2025 00:00:00 +0000</lastBuildDate><atom:link href="https://freshman118.github.io/categories/ai/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>超简单本地部署DeepSeek</title>
+        <link>https://freshman118.github.io/p/%E8%B6%85%E7%AE%80%E5%8D%95%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2deepseek/</link>
+        <pubDate>Sat, 26 Apr 2025 00:00:00 +0000</pubDate>
+        
+        <guid>https://freshman118.github.io/p/%E8%B6%85%E7%AE%80%E5%8D%95%E6%9C%AC%E5%9C%B0%E9%83%A8%E7%BD%B2deepseek/</guid>
+        <description>&lt;h1 id=&#34;1ollama&#34;&gt;1.Ollama
+&lt;/h1&gt;&lt;h2 id=&#34;11-下载安装ollama&#34;&gt;1.1 下载安装Ollama
+&lt;/h2&gt;&lt;p&gt;下载&lt;/p&gt;
+&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://ollama.com/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://ollama.com/download&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font style=&#34;color:rgb(17, 24, 39);&#34;&gt;Ollama &lt;/font&gt;&lt;font style=&#34;color:rgb(44, 44, 54);&#34;&gt;是一个开源工具链，旨在简化在本地环境（如个人电脑或服务器）中运行和管理大型语言模型（LLM）的过程。它允许用户快速部署、测试和调用开源的 LLM（如 Llama 系列、Falcon、Mistral 等），而无需复杂的配置。&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;font style=&#34;color:rgb(44, 44, 54);&#34;&gt;环境变量&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.nlark.com/yuque/0/2025/png/27406617/1744859735864-36c85337-0b14-4473-8315-bae73bd6e8a0.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font style=&#34;color:rgb(44, 44, 54);&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font style=&#34;color:rgb(44, 44, 54);&#34;&gt;默认安装即可&lt;/font&gt;&lt;/p&gt;
+&lt;h3 id=&#34;font-stylecolorrgb44-44-54软链接到非c盘font&#34;&gt;&lt;font style=&#34;color:rgb(44, 44, 54);&#34;&gt;软链接到非C盘&lt;/font&gt;
+&lt;/h3&gt;&lt;p&gt;&lt;img src=&#34;https://cdn.nlark.com/yuque/0/2025/png/27406617/1744859771260-8e59053d-215c-46e4-a9a5-825db53372fe.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;位置&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;类别&lt;/th&gt;
+&lt;th&gt;原目录&lt;/th&gt;
+&lt;th&gt;链接目录&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;模型&lt;/td&gt;
+&lt;td&gt;C:\Users\Jackson.ollama&lt;/td&gt;
+&lt;td&gt;D:\Program Files\Ollama.ollama&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;日志&lt;/td&gt;
+&lt;td&gt;C:\Users\Jackson\AppData\Local\Ollama&lt;/td&gt;
+&lt;td&gt;D:\Program Files\Ollama\Logs&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;主程序&lt;/td&gt;
+&lt;td&gt;C:\Users\Jackson\AppData\Local\Programs\Ollama&lt;/td&gt;
+&lt;td&gt;D:\Program Files\Ollama\Progam&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;p&gt;软链接&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt; 1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 7
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 8
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt; 9
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;10
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;11
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;12
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;13
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;14
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 建立软链接&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mklink /D &lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\Users\Jackson\.ollama&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;D:\Program Files\Ollama\.ollama&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mklink /D &lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\Users\Jackson\AppData\Local\Ollama&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;D:\Program Files\Ollama\Logs&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;mklink /D &lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\Users\Jackson\AppData\Local\Programs\Ollama&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;D:\Program Files\Ollama\Progam&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 如果使用后再改则需要复制内容并删除源文件内容操作&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;robocopy &lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\Users\Jackson\.ollama&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;D:\Program Files\Ollama\.ollama&amp;#34;&lt;/span&gt; /mir
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;rmdir /s /q &lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\Users\Jackson\.ollama&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;robocopy &lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\Users\Jackson\AppData\Local\Ollama&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;D:\Program Files\Ollama\Logs&amp;#34;&lt;/span&gt; /mir
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;rmdir /s /q &lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\Users\Jackson\AppData\Local\Ollama&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;robocopy &lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\Users\Jackson\AppData\Local\Programs\Ollama&amp;#34;&lt;/span&gt; &lt;span class=&#34;s2&#34;&gt;&amp;#34;D:\Program Files\Ollama\Progam&amp;#34;&lt;/span&gt; /mir
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;rmdir /s /q &lt;span class=&#34;s2&#34;&gt;&amp;#34;C:\Users\Jackson\AppData\Local\Programs\Ollama&amp;#34;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h2 id=&#34;font-stylecolorrgb44-44-5412-下载安装deepseekfont&#34;&gt;&lt;font style=&#34;color:rgb(44, 44, 54);&#34;&gt;1.2 下载安装DeepSeek&lt;/font&gt;
+&lt;/h2&gt;&lt;p&gt;无独立显卡：1.5b&lt;/p&gt;
+&lt;p&gt;4G、8G：7B、8B&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;div class=&#34;chroma&#34;&gt;
+&lt;table class=&#34;lntable&#34;&gt;&lt;tr&gt;&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code&gt;&lt;span class=&#34;lnt&#34;&gt;1
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;2
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;3
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;4
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;5
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;6
+&lt;/span&gt;&lt;span class=&#34;lnt&#34;&gt;7
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;
+&lt;td class=&#34;lntd&#34;&gt;
+&lt;pre tabindex=&#34;0&#34; class=&#34;chroma&#34;&gt;&lt;code class=&#34;language-bash&#34; data-lang=&#34;bash&#34;&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 查看显卡信息&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;dxdiag
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;&lt;span class=&#34;c1&#34;&gt;# 部署deepseek&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama run deepseek-r1:1.5b
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama run deepseek-r1:7b
+&lt;/span&gt;&lt;/span&gt;&lt;span class=&#34;line&#34;&gt;&lt;span class=&#34;cl&#34;&gt;ollama run deepseek-r1:8b
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;&lt;h3 id=&#34;deepseek-r1-参数版本与显卡适配表&#34;&gt;&lt;strong&gt;DeepSeek-R1 参数版本与显卡适配表&lt;/strong&gt;
+&lt;/h3&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;模型参数&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;FP16显存需求&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;最低显卡（4-bit量化）&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;推荐显卡（原生/优化）&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;关键说明&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;1.5B&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;3GB&lt;/td&gt;
+&lt;td&gt;GTX 1060（6GB）&lt;/td&gt;
+&lt;td&gt;RTX 3060（12GB）&lt;/td&gt;
+&lt;td&gt;原生运行，无需量化&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;7B&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;14GB&lt;/td&gt;
+&lt;td&gt;RTX 3060（12GB, 4-bit）&lt;/td&gt;
+&lt;td&gt;RTX 4070（12GB, 4-bit）&lt;/td&gt;
+&lt;td&gt;4-bit量化后显存占用约4.5GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;8B&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;16GB&lt;/td&gt;
+&lt;td&gt;RTX 3060 Ti（8GB, 4-bit）&lt;/td&gt;
+&lt;td&gt;RTX 4080（16GB, FP16）&lt;/td&gt;
+&lt;td&gt;原生需16GB，4-bit量化约5GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;14B&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;28GB&lt;/td&gt;
+&lt;td&gt;RTX 4070 Ti（12GB, 4-bit）&lt;/td&gt;
+&lt;td&gt;RTX 4090（24GB, 4-bit）&lt;/td&gt;
+&lt;td&gt;4-bit量化后显存约7GB&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;32B&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;64GB&lt;/td&gt;
+&lt;td&gt;RTX 4090（24GB, 4-bit）&lt;/td&gt;
+&lt;td&gt;双RTX 4090（48GB, NVLink）&lt;/td&gt;
+&lt;td&gt;需多卡并行或8-bit量化（显存32GB）&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;70B&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;140GB&lt;/td&gt;
+&lt;td&gt;双A100 80GB（NVLink）&lt;/td&gt;
+&lt;td&gt;H100 80GB ×2&lt;/td&gt;
+&lt;td&gt;仅限专业卡集群&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;671B&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;1.34TB&lt;/td&gt;
+&lt;td&gt;8×H100 80GB（分布式）&lt;/td&gt;
+&lt;td&gt;DGX GH200（超级计算节点）&lt;/td&gt;
+&lt;td&gt;需超算级硬件支持&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h1 id=&#34;2cherry-studio&#34;&gt;2.Cherry Studio
+&lt;/h1&gt;&lt;p&gt;Chatbox AI&lt;/p&gt;
+&lt;h2 id=&#34;21-下载安装cherry-studio&#34;&gt;2.1 下载安装Cherry Studio
+&lt;/h2&gt;&lt;p&gt;&lt;a class=&#34;link&#34; href=&#34;https://cherry-ai.com/download&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://cherry-ai.com/download&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;&lt;font style=&#34;color:rgb(17, 24, 39);&#34;&gt;Cherry Studio &lt;/font&gt;&lt;font style=&#34;color:rgb(44, 44, 54);&#34;&gt;是一个新兴的 AI 工具平台，旨在为用户提供简单易用的界面来创建和管理基于大语言模型（LLM）的应用程序。它专注于简化 AI 模型的部署、交互和优化流程，适合开发者、内容创作者以及企业用户快速构建定制化的 AI 解决方案&lt;/font&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;&lt;font style=&#34;color:rgb(44, 44, 54);&#34;&gt;默认安装即可&lt;/font&gt;&lt;/p&gt;
+&lt;h2 id=&#34;font-stylecolorrgb44-44-5422-配置cherry-studiofont&#34;&gt;&lt;font style=&#34;color:rgb(44, 44, 54);&#34;&gt;2.2 配置Cherry Studio&lt;/font&gt;
+&lt;/h2&gt;&lt;p&gt;设置-Ollama-开启-管理-添加&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.nlark.com/yuque/0/2025/png/27406617/1744772083278-41e3d493-89f8-42b2-88bc-c94b36eb96e5.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&#34;https://cdn.nlark.com/yuque/0/2025/png/27406617/1744772100033-77042311-b636-4535-9ccc-47f59621fa6f.png&#34;
+	
+	
+	
+	loading=&#34;lazy&#34;
+	
+	
+&gt;&lt;/p&gt;
+&lt;h2 id=&#34;23-cherry-studio-vs-chatbox-ai&#34;&gt;2.3 Cherry Studio VS Chatbox AI
+&lt;/h2&gt;&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;strong&gt;维度&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Cherry Studio&lt;/strong&gt;&lt;/th&gt;
+&lt;th&gt;&lt;strong&gt;Chatbox AI&lt;/strong&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;定义&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;一款面向开发者的AI编程辅助工具，强调代码生成、调试和优化。&lt;/td&gt;
+&lt;td&gt;一款通用AI聊天助手，支持多种模型（如GPT、Claude等），侧重对话交互和内容创作。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;核心功能&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;- 代码自动补全   - 错误检测与修复   - 项目级代码分析   - 集成开发环境（IDE）插件&lt;/td&gt;
+&lt;td&gt;- 多模型切换（GPT-4、Claude等）   - 对话历史管理   - 文件上传解析   - 自定义提示词模板&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;优点&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;1. &lt;strong&gt;深度代码理解&lt;/strong&gt;：适合复杂项目开发。   2. &lt;strong&gt;精准调试建议&lt;/strong&gt;：减少人工排查时间。   3. &lt;strong&gt;IDE集成&lt;/strong&gt;：无缝对接VS Code等工具。&lt;/td&gt;
+&lt;td&gt;1. &lt;strong&gt;多模型支持&lt;/strong&gt;：灵活选择AI模型。   2. &lt;strong&gt;用户友好&lt;/strong&gt;：界面简洁，适合非技术用户。   3. &lt;strong&gt;跨平台&lt;/strong&gt;：支持桌面端和移动端。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;缺点&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;1. 学习曲线较陡（需编程基础）。   2. 功能局限于开发场景，通用性较弱。&lt;/td&gt;
+&lt;td&gt;1. 代码生成能力较弱（相比专业工具）。   2. 高级功能需付费（如GPT-4高频使用）。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;侧重点&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;开发者效率工具&lt;/strong&gt;：   - 优化编码流程   - 提升代码质量&lt;/td&gt;
+&lt;td&gt;&lt;strong&gt;通用AI助手&lt;/strong&gt;：   - 日常问答   - 内容创作   - 知识检索&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;适用人群&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;程序员、软件工程师、技术团队。&lt;/td&gt;
+&lt;td&gt;普通用户、创作者、非技术背景的AI爱好者。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;定价&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;通常按团队/企业订阅（提供免费试用）。&lt;/td&gt;
+&lt;td&gt;免费基础版 + 付费高级模型访问权限。&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;&lt;strong&gt;典型场景&lt;/strong&gt;&lt;/td&gt;
+&lt;td&gt;- 自动生成API代码   - 修复复杂Bug&lt;/td&gt;
+&lt;td&gt;- 撰写邮件/文案   - 学习新知识   - 头脑风暴&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;hr&gt;
+&lt;p&gt;&lt;strong&gt;补充说明：&lt;/strong&gt;&lt;/p&gt;
+&lt;ol&gt;
+&lt;li&gt;&lt;strong&gt;Cherry Studio&lt;/strong&gt; 更适合技术场景，而 &lt;strong&gt;Chatbox AI&lt;/strong&gt; 更偏向日常使用。&lt;/li&gt;
+&lt;li&gt;如果涉及&lt;strong&gt;代码开发&lt;/strong&gt;，Cherry Studio的精准度更高；若需&lt;strong&gt;多模型切换&lt;/strong&gt;或&lt;strong&gt;创意内容&lt;/strong&gt;，Chatbox AI更灵活。&lt;/li&gt;
+&lt;li&gt;两者均支持本地化部署（具体取决于版本），但Chatbox AI对个人用户更友好。&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;如果需要更具体的功能对比（如支持的编程语言、模型版本等），可以进一步补充！&lt;/p&gt;
+&lt;h1 id=&#34;3测试&#34;&gt;3.测试
+&lt;/h1&gt;&lt;h2 id=&#34;问题1&#34;&gt;问题1
+&lt;/h2&gt;&lt;p&gt;&lt;font style=&#34;color:rgb(51, 51, 51);&#34;&gt;问：有若干只鸡兔同在一个笼子里，从上面数，有35个头，从下面数，有94只脚。问笼中各有多少只鸡和兔？&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font style=&#34;color:rgb(51, 51, 51);&#34;&gt;答：兔子有12只，鸡有23只&lt;/font&gt;&lt;/p&gt;
+&lt;h2 id=&#34;font-stylecolorrgb51-51-51问题2font&#34;&gt;&lt;font style=&#34;color:rgb(51, 51, 51);&#34;&gt;问题2&lt;/font&gt;
+&lt;/h2&gt;&lt;p&gt;&lt;font style=&#34;color:rgb(51, 51, 51);&#34;&gt;问：一个挂钟敲六下要30秒，敲12下要几秒?&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font style=&#34;color:rgb(51, 51, 51);&#34;&gt;答：66秒&lt;/font&gt;&lt;/p&gt;
+&lt;p&gt;&lt;font style=&#34;color:rgb(51, 51, 51);&#34;&gt;&lt;/font&gt;&lt;/p&gt;
+&lt;h1 id=&#34;font-stylecolorrgb51-51-51referencefont&#34;&gt;&lt;font style=&#34;color:rgb(51, 51, 51);&#34;&gt;Reference&lt;/font&gt;
+&lt;/h1&gt;&lt;ol&gt;
+&lt;li&gt;&lt;a class=&#34;link&#34; href=&#34;https://ult16lvzhl.feishu.cn/wiki/ZQ3NwAqFfiBmVqkFkZ1ci1qhnce&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;本地部署DeepSeek&lt;/a&gt;&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+        </item>
+        
+    </channel>
+</rss>
